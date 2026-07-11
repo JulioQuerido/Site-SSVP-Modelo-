@@ -20,6 +20,12 @@ const configuracoesRoutes = require('./routes/configuracoes');
 
 const app = express();
 
+// Necessário no Vercel (e em qualquer host atrás de um reverse proxy) para que
+// express-rate-limit e req.ip leiam corretamente o X-Forwarded-For.
+if (process.env.VERCEL || process.env.TRUST_PROXY === 'true') {
+  app.set('trust proxy', 1);
+}
+
 app.use(helmet());
 app.use(
   cors({
