@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SSVP">
+  <!-- Placeholder do logotipo SSVP — círculo azul (humanidade) + peixe (cristianismo).
+       Substituir pelo arquivo oficial do Manual da Marca quando disponível. -->
+  <circle cx="32" cy="32" r="30" fill="#0064B6" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Peixe estilizado -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 32 C22 20, 40 20, 48 32 C40 44, 22 44, 14 32 Z"/>
+    <path d="M48 32 L56 25 L56 39 Z"/>
+  </g>
+  <circle cx="22" cy="30" r="2.4" fill="#FF0000"/>
+</svg>

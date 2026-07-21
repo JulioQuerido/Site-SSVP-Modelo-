@@ -1,0 +1,70 @@
+/* Fontes oficiais SSVP — Manual da Marca v01.06.2024
+   Primária (títulos/display): EB Garamond  ·  Secundária (corpo/UI): Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;700;800&display=swap');
+
+/* Paleta e tokens da identidade visual SSVP */
+:root {
+  --color-primary:       #0064B6;
+  --color-primary-dark:  #004d8a;
+  --color-primary-light: #e8f2fc;
+  --color-accent:        #FF0000;
+  --color-accent-soft:   #fff0f0;
+  --color-yellow:        #F2B90C;
+  --color-green:         #118C5F;
+  --color-white:         #FFFFFF;
+  --color-black:         #000000;
+  --color-text:          #1a1a1a;
+  --color-muted:         #6b7280;
+  --color-bg:            #f8fafc;
+  --color-border:        #e2e8f0;
+  --font-display:        'EB Garamond', 'Garamond', Georgia, serif;
+  --font-body:           'Montserrat', 'Segoe UI', sans-serif;
+  --radius:              8px;
+  --shadow:              0 2px 12px rgba(0, 100, 182, 0.10);
+
+  /* Sobrescreve os tokens de fonte do WPDS (stitches) para aplicar a
+     tipografia oficial em todos os componentes que usam $headline/$subhead/$body/$meta.
+     O !important garante prioridade sobre o tema injetado em runtime pelo WPDS. */
+  --wpds-fonts-headline: 'EB Garamond', 'Garamond', Georgia, serif !important;
+  --wpds-fonts-subhead:  'Montserrat', 'Segoe UI', sans-serif !important;
+  --wpds-fonts-body:     'Montserrat', 'Segoe UI', sans-serif !important;
+  --wpds-fonts-meta:     'Montserrat', 'Segoe UI', sans-serif !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > main,
+#root > div {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}

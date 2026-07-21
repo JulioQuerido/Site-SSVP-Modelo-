@@ -1,41 +1,29 @@
 {
-  "name": "ssvp-portal-backend",
+  "name": "project",
   "version": "1.0.0",
-  "description": "Backend do Portal de Transparência da Sociedade de São Vicente de Paulo (SSVP) - Conselho Nacional do Brasil",
-  "main": "src/server.js",
-  "type": "commonjs",
-  "engines": {
-    "node": ">=20.0.0"
-  },
+  "description": "",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "migrate": "node src/models/migrations.js",
-    "seed": "node src/seed.js"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
-  "keywords": ["ssvp", "transparencia", "osc", "portal"],
-  "author": "SSVP Brasil",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@vercel/blob": "^2.6.1",
-    "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.3.0",
-    "cheerio": "^1.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.4.0",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "knex": "^3.1.0",
-    "multer": "^2.2.0",
-    "node-cache": "^5.1.2",
-    "nodemailer": "^9.0.3",
-    "pg": "^8.13.0",
-    "validator": "^13.12.0",
-    "zod": "^3.23.8"
+    "@vitejs/plugin-react": "^6.0.2",
+    "@washingtonpost/wpds-assets": "^2.17.0",
+    "@washingtonpost/wpds-ui-kit": "^2.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.17.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3"
   }
 }
